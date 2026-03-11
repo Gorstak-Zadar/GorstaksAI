@@ -159,9 +159,12 @@ function App() {
             {status === "error" && "Connection error"}
           </span>
         </div>
-        {sessionId && status !== "ready" && (
-          <div className="session-hint">
-            Session: <code>{sessionId}</code> — Run the worker with this session ID
+        {status !== "ready" && (
+          <div className="setup-box">
+            <p><strong>Get started:</strong></p>
+            <p>1. Install <a href="https://ollama.com" target="_blank" rel="noopener noreferrer">Ollama</a>, then run <code>ollama pull llama3.2:3b</code></p>
+            <p>2. <a href="https://github.com/Gorstak-Zadar/local-ai-platform/archive/refs/heads/master.zip">Download</a> the app, unzip, and double‑click <strong>launcher.bat</strong></p>
+            <p className="sub">The launcher starts the worker and opens your browser automatically.</p>
           </div>
         )}
       </header>

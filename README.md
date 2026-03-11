@@ -64,17 +64,18 @@ npm start
 ```
 Open `http://localhost:3000`.
 
-### 5. Start the worker (user's machine)
+### 5. Start (automatic)
 
+**Option A — One click (recommended)**  
+Double‑click **launcher.bat** (Windows) or run `node launcher.js` (Mac/Linux).  
+The launcher will fetch a session, start the worker, and open your browser.
+
+**Option B — Manual**  
 ```bash
 cd worker
 npm start
 ```
-
-The worker will fetch a session and print a URL. **Open that URL in your browser** — the web app will use the same session and connect to your local worker.
-
-- **Production:** URL will be `http://localhost:3000?session=...` (or your deployed host).
-- **Development (Vite):** Use `http://localhost:5173?session=...` instead — replace the port with 5173 and keep the `?session=...` part.
+Then open the URL it prints in your browser.
 
 ## Model mapping
 

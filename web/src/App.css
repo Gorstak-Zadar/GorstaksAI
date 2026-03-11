@@ -68,6 +68,22 @@ header p {
   border-radius: 4px;
 }
 
+.setup-box {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.setup-box p {
+  margin: 0 0 0.5rem 0;
+}
+.setup-box a {
+  color: var(--accent);
+}
+
 .controls {
   margin-bottom: 1rem;
 }

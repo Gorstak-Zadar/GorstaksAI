@@ -2,7 +2,13 @@
 
 **Free · Unlimited · Your Hardware**
 
+→ **[Try it live](https://local-ai-platform-production.up.railway.app/)**
+
 A ChatGPT-like web interface where prompts are entered on your website, but **all inference runs on the user's machine**. No cloud GPUs, no API keys, no limits.
+
+**Two modes:**
+- **Quick** — Runs entirely in your browser (WebLLM). No install. Use it immediately.
+- **Full** — Uses Ollama + worker for larger, more capable models.
 
 ## Architecture
 
@@ -64,18 +70,18 @@ npm start
 ```
 Open `http://localhost:3000`.
 
-### 5. Start (automatic)
+### 5. Full mode — Start the worker (automatic)
 
 **Option A — One click (recommended)**  
 Double‑click **launcher.bat** (Windows) or run `node launcher.js` (Mac/Linux).  
-The launcher will fetch a session, start the worker, and open your browser.
+The launcher will fetch a session, start the worker, and open [the app](https://local-ai-platform-production.up.railway.app/).
 
 **Option B — Manual**  
 ```bash
 cd worker
 npm start
 ```
-Then open the URL it prints in your browser.
+Then open the URL it prints (or [the live app](https://local-ai-platform-production.up.railway.app/) with that session).
 
 ## Model mapping
 

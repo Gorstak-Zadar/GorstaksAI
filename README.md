@@ -9,7 +9,14 @@ A ChatGPT-like web interface where **all inference runs in the user's browser vi
 ### How it works
 
 - Runs entirely in the user's browser using [WebLLM](https://webllm.mlc.ai/).
-- **4 models** to choose from: Llama 3.2 3B, Hermes 3 3B, Qwen 3 4B, and Phi 3.5 Vision (image understanding).
+- **4 models** to choose from via dropdown:
+
+| Model | Description |
+|-------|-------------|
+| **Llama 3.2 3B** | General purpose (default) |
+| **Hermes 3 3B** | Creative, less filtered |
+| **Qwen 3 4B** | Smarter reasoning |
+| **Phi 3.5 Vision** | Understands images (shows a camera button to attach photos) |
 - Uses the user's GPU via WebGPU. Requires a compatible browser (Chrome, Edge, or other Chromium-based).
 
 ## Quick Start

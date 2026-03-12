@@ -1,18 +1,16 @@
-## Local AI Platform
+## Gorstaks AI
 
 **Free · Unlimited · Your Hardware**
 
-→ **[Try it live](https://local-ai-platform-production.up.railway.app/)**
+→ **[Try it live](https://gorstak-zadar.github.io/local-ai-platform/)**
 
-A ChatGPT-like web interface where prompts are entered on your website, but **all inference runs in the user's browser via WebGPU**. No cloud GPUs, no API keys, no limits, no installs.
+A ChatGPT-like web interface where **all inference runs in the user's browser via WebGPU**. No cloud GPUs, no API keys, no limits, no installs.
 
-### How it works now
+### How it works
 
-- **Single mode** — Runs entirely in the user's browser using [WebLLM](https://webllm.mlc.ai/).
-- Uses a **Llama 3.2 3B** model (`Llama-3.2-3B-Instruct-q4f16_1-MLC`) loaded on demand.
-- Uses the user's GPU (when WebGPU is available). If WebGPU is not supported, the app shows an error.
-
-There is **no worker process, no Ollama, and no separate \"Full\" mode** anymore.
+- Runs entirely in the user's browser using [WebLLM](https://webllm.mlc.ai/).
+- **4 models** to choose from: Llama 3.2 3B, Hermes 3 3B, Qwen 3 4B, and Phi 3.5 Vision (image understanding).
+- Uses the user's GPU via WebGPU. Requires a compatible browser (Chrome, Edge, or other Chromium-based).
 
 ## Quick Start
 

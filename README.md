@@ -19,46 +19,22 @@ A ChatGPT-like web interface where **all inference runs in the user's browser vi
 | **Phi 3.5 Vision** | Understands images (shows a camera button to attach photos) |
 - Uses the user's GPU via WebGPU. Requires a compatible browser (Chrome, Edge, or other Chromium-based).
 
-## Quick Start
-
-### 1. Install dependencies
-
-```bash
-cd local-ai-platform
-npm install
-cd server && npm install
-cd ../web && npm install
-```
-
-### 2. Run in development
-
-```bash
-cd server
-npm run dev
-```
-
-In another terminal:
+## Development
 
 ```bash
 cd web
+npm install
 npm run dev
 ```
 
 Open `http://localhost:5173` in a WebGPU-capable browser (Chrome, Edge, or other Chromium-based).
 
-### 3. Production build
+## Deployment
 
-```bash
-cd web
-npm run build
-cd ../server
-npm start
-```
-
-Open `http://localhost:3000`.
+Hosted on GitHub Pages. Every push to `master` triggers an automatic build and deploy via GitHub Actions.
 
 ## Notes
 
 - The first time a user opens the app, WebLLM will **download the model weights** in the background (a few GB). Subsequent loads are much faster thanks to caching.
-- All prompts and responses stay in the browser; the server only serves static files.
+- All prompts and responses stay in the browser. Nothing is sent to any server.
 

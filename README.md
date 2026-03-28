@@ -64,12 +64,6 @@ Hosted on GitHub Pages. Every push to `master` triggers an automatic build and d
 
 ---
 
-## Explained like you're five (the honest kind)
-
-Your PC is a **busy kitchen**. This repo is at best a **sticky note on the fridge**: it might remind you where the knives are, but it does not make you a Michelin chef, and it definitely does not stop someone from sneaking in through the window. We use simple words on purpose so nobody confuses scripts with superpowers.
-
----
-
 ## Disclaimer (read this; it matters)
 
 This software and documentation are provided **“as is”**, without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. **Use at your own risk.**

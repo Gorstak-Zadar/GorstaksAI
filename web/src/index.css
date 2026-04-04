@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --bg: #0d0e12;
+  --surface: #16181d;
+  --border: #2a2d36;
+  --text: #e8eaed;
+  --muted: #9aa0a6;
+  --accent: #7c3aed;
+  --accent-hover: #8b5cf6;
+  --success: #22c55e;
+  --error: #ef4444;
+}
+body {
+  margin: 0;
+  font-family: "Outfit", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+code, pre {
+  font-family: "JetBrains Mono", monospace;
+}
